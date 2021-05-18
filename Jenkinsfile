@@ -1,7 +1,7 @@
 node {
    def mvnHome
    stage('Prepare') {
-      git url: 'https://github.com/deep1607/HappyTrip.git', branch: 'Main-Module'
+      git url: 'https://github.com/khp3040/HappyTrip-CaseStudy.git', branch: 'master'
       mvnHome = tool 'mvn'
    }
    stage('Build') {
