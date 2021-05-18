@@ -1,0 +1,23 @@
+[
+	{
+		"airlineCode": "K12",
+		"airlineName": "Kingfisher"
+	},
+	
+	{
+		"airlineCode": "EA12",
+		"airlineName": "EithaadArirways"
+	},
+	
+	{
+		"airlineCode": "AI12",
+		"airlineName": "AirIndia"
+	},
+	
+	{
+		"airlineCode": "BA12",
+		"airlineName": "BritishAirlines"
+	}
+		
+	
+]

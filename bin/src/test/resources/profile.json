@@ -1,0 +1,28 @@
+[
+{
+"id":"1",	
+"fullName":"Aakansha V",
+"gender":"Female",
+"dob":"8Nov",
+"email":"aakansha598@gmail.com",
+"address":"NFL guna",
+"state":"madhya pradesh",
+"city" :"GUNA",
+"country":"INDIA",
+"mobileNumber":"123333",
+"pincode":"473111"
+},
+{
+"id":"2",	
+"fullName":"Aashi V",
+"gender":"Female",
+"dob":"9Nov",
+"email":"aashi598@gmail.com",
+"address":"NFL guna",
+"state":"madhya pradesh",
+"city" :"GUNA",
+"country":"INDIA",
+"mobileNumber":"123333",
+"pincode":"473111"
+}		
+]
