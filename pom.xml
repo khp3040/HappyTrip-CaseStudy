@@ -30,9 +30,9 @@
 		</snapshotRepository>
 	</distributionManagement>
 	<scm>
-		<connection>scm:git:git@github.com:deep1607/HappyTrip.git</connection>
-		<developerConnection>scm:git:git@github.com:deep1607/HappyTrip.git</developerConnection>
-		<url>git@github.com:deep1607/HappyTrip.git</url>
+		<connection>scm:git:git@github.com:khp3040/HappyTrip-CaseStudy.git</connection>
+		<developerConnection>scm:git:git@github.com:deep1607/HappyTrip-CaseStudy.git</developerConnection>
+		<url>git@github.com:khp3040/HappyTrip-CaseStudy.git</url>
 		<tag>v0.0.1</tag>
 	</scm>
 	<dependencies>
