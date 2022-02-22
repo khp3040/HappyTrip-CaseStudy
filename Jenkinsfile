@@ -22,6 +22,17 @@ node {
         bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean verify/)
      }
    }
+   stage('Publish') {
+      def server = Artifactory.server 'artifactory'
+      def rtMaven = Artifactory.newMavenBuild()
+      rtMaven.tool = 'mvn'
+      rtMaven.resolver server: server, releaseRepo: 'libs-release', snapshotRepo: 'libs-snapshot'
+      rtMaven.deployer server: server, releaseRepo: 'libs-release-local', snapshotRepo: 'libs-snapshot-local'
+      rtMaven.deployer.artifactDeploymentPatterns.addInclude("*stubs*")
+      def buildInfo = rtMaven.run pom: 'person-service/pom.xml', goals: 'clean install'
+      rtMaven.deployer.deployArtifacts buildInfo
+      server.publishBuildInfo buildInfo
+    }
    stage('Sonar') {
       if (isUnix()) {
          sh "'${mvnHome}/bin/mvn' sonar:sonar"
